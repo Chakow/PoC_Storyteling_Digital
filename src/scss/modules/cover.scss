@@ -1,0 +1,16 @@
+.cover {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: 200;
+  .image {
+    will-change: transform;
+  }
+  img {
+    width: 450px;
+  }
+}
