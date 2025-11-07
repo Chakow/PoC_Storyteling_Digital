@@ -9,8 +9,23 @@
   z-index: 200;
   .image {
     will-change: transform;
-  }
-  img {
-    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    .cover1 {
+      width: 450px;
+      transform: translateZ(10px);
+    }
+    .cover2 {
+      position: fixed;
+      width: 450px;
+      transform: translateZ(20px);
+    }
+    .cover3 {
+      position: fixed;
+      width: 450px;
+      transform: translateZ(30px);
+    }
   }
 }

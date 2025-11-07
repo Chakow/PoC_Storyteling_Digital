@@ -1,3 +1,4 @@
+import Lenis from "lenis";
 import { gsap } from "gsap";
 import VanillaTilt from "vanilla-tilt";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -71,16 +72,16 @@ document.addEventListener("DOMContentLoaded", function () {
       opacity: 1,
       duration: 1,
     });
-    //TILT COVER
 
+    //TILT COVER
     const tiltElements = document.querySelectorAll(".image");
 
     VanillaTilt.init(tiltElements, {
       reverse: true,
       max: 10,
-      speed: 1000,
-      glare: true,
-      "max-glare": 0.5,
+      speed: 800,
+      perspective: 1000,
+      glare: false,
     });
   }, 1000);
 });
